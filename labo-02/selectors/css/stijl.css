@@ -10,7 +10,7 @@ body {
 }
 
 /* 1. alle links in de navigatie -> color: crimson; */
-nav ul li a 
+nav a 
 {
       color: crimson;
 }
@@ -29,14 +29,14 @@ footer p
       (outline tekent een kader rond precies het element dat je raakte; de
       property zelf komt in hoofdstuk 3) */
 
-.rassen ul li
+.rassen > li
 {
      outline: 2px solid crimson; 
 }      
 
 /* 4. de paragraaf die onmiddellijk na elke h2 komt -> font-style: italic; */
 
-h2 ~ p
+h2 + p
 {
       font-style: italic;
 }
