@@ -9,20 +9,27 @@
 
 }
 
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* === your rules === */
 header
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: var(--balk);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem 2rem;
 }
 
-header, nav, ul, li
-{
-    display: flex;
-
-    color: var(--tekst);
-    background-color: var(--balk);
+.logo
+{   color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 nav
@@ -35,19 +42,20 @@ nav
 
 ul
 {
+    display: flex;
     gap: 0.5rem;
+    list-style-type: none;
 }
 
-a
+li a
 {
-    display: flex;
     text-decoration: none;
     color: var(--tekst);
-    padding: 0.5rem;
-
+    display: block;
+    padding: 0.75rem 1rem;
 }
 
-li a:hover
+.actief, a:hover
 {
     background-color: var(--accent);
     border-radius: 0.5rem;
@@ -55,12 +63,5 @@ li a:hover
     color: var(--balk);
 }
 
-.logo
-{
-    background-color: var(--balk);
-    color: var(--accent);
-    justify-content: center;
-    align-items: center;
-    padding: 0px 10px;
-}
+
 
