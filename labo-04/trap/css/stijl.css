@@ -52,5 +52,6 @@ div:nth-child(4)
     grid-column: 4/5;
     grid-row:4/5;
     background-color: #ebebd3;
+    color: black;
     
 }

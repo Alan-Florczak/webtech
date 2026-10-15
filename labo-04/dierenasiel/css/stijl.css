@@ -1,8 +1,67 @@
-/* stijl.css - labo 4, dierenasiel (reset.css is linked before this file) */
+/* stijl.css - labo 4, navigatie (reset.css is linked before this file) */
 
 /* === tokens === */
 :root {
 
+    --balk:  #1f3a2e;
+    --tekst: #f3efe6;
+    --accent:#e6b53c;
+
+}
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* === your rules === */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--balk);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem 2rem;
+}
+
+.logo
+{   color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav
+{
+    display: flex;
+    padding-right:2rem;
+    color: var(--tekst);
+    background-color: var(--balk);
+}
+
+ul
+{
+    display: flex;
+    gap: 0.5rem;
+    list-style-type: none;
+}
+
+li a
+{
+    text-decoration: none;
+    color: var(--tekst);
+    display: block;
+    padding: 0.75rem 1rem;
+}
+
+.actief, a:hover
+{
+    background-color: var(--accent);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: var(--balk);
+}
+
+
+
