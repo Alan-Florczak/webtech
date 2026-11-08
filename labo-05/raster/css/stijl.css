@@ -1,0 +1,107 @@
+/* stijl.css - labo 5, raster (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+
+    --a-:#e9493f;
+    --b-:#edd24a;
+    --c-:#072f55;
+    --d-:#52a51a;
+    --e-:#efaad9;
+    --f-:#a5f129;
+    --g-:#ebc47a;
+    --h-:#e8882c;
+
+}
+
+/* === your rules === */
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main
+{
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
+    height: 100vh;
+    width: 80vw;
+    padding: 20px;
+        border: black 3px solid;
+    
+}
+
+div
+{
+
+    height: 170px;
+    width: 230px;
+    background-color: pink;
+    display: flex;
+    justify-content: right;
+    align-items:start;
+    padding: 10px;
+    color: white;
+}
+
+div:nth-child(1)
+{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color:  var(--a-) ;
+}
+
+div:nth-child(2)
+{
+    grid-row: 1/2;
+    grid-column: 4/5;
+    background-color:  var(--b-) ;
+}
+
+div:nth-child(3)
+{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color:  var(--c-) ;
+}
+
+div:nth-child(4)
+{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color:  var(--d-) ;
+}
+
+div:nth-child(5)
+{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background-color:  var(--e-) ;
+}
+
+div:nth-child(6)
+{
+    grid-row: 2/3;
+    grid-column: 4/5;
+    background-color:  var(--f-) ;
+}
+
+div:nth-child(7)
+{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color:  var(--g-) ;
+}
+
+div:nth-child(8)
+{
+    grid-row: 3/4;
+    grid-column: 4/5;
+    background-color:  var(--h-) ;
+}
